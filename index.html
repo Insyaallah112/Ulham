@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="invitation-overlay" id="invitationOverlay">
+        <div class="envelope-container">
+            <div class="envelope" id="envelope">
+            <div class="envelope-front"></div>
+            <div class="envelope-back"></div>
+            <div class="letter">
+                <div class="letter-content">
+                <h3>Undangan Pernikahan</h3>
+                <p>Ilham & Ulfa</p>
+                <button class="open-invitation-btn" id="openInvitationBtn">Buka Undangan</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    <div class="container">
+        <header>
+            <div class="flower-decoration"></div>
+            <h1>Wedding Invitation</h1>
+            <h2>Mohammad Ilham Fikri & Ulfa Khaerani</h2>
+            <p class="date">Rabu, 04 Juni 2025</p>
+        </header>
+
+        <section class="couple">
+            <div class="couple-img">
+                <img src="images/couple.jpg" alt="Foto Pasangan">
+            </div>
+            <div class="couple-names">
+                <h3>Mohammad Ilham Fikri</h3>
+                <p>Putra dari Bapak Mohammad Munir Zain & Ibu Siti Zubaidah</p>
+                
+                <h3>Ulfa Khaerani</h3>
+                <p>Putri dari Bapak Sarwandi & Ibu Dalsiyah</p>
+            </div>
+        </section>
+
+        <section class="event-details">
+            <h2>Detail Acara</h2>
+            <div class="event">
+                <h3>Akad Nikah</h3>
+                <p>09.00 - Selesai WIB</p>
+                <p>Rumah Mempelai Wanita</p>
+                <p>Krajan, Tempursari, Sapuran, Wonosobo</p>
+            </div>
+            <div class="event">
+                <h3>Resepsi</h3>
+                <p>Ba'da Dhuhur - Relax</p>
+                <p>Rumah Mempelai Wanita</p>
+                <p>Krajan, Tempursari, Sapuran, Wonosobo</p>
+            </div>
+        </section>
+        
+        <section class="location">
+            <h2>Lokasi Acara</h2>
+            <div class="map-container">
+                <a href="https://maps.app.goo.gl/SiWFDgsD9dAqdvCcA" target="_blank" class="map-button">
+                    Buka di Google Maps
+                </a>
+                <p class="location-note">Klik tombol di atas untuk melihat lokasi di Google Maps</p>
+            </div>
+        </section>
+        
+        <section class="rsvp">
+            <h2>Konfirmasi Kehadiran</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Jumlah Tamu</label>
+                    <input type="number" id="guests" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="attending">Konfirmasi</label>
+                    <select id="attending" required>
+                        <option value="yes">Hadir</option>
+                        <option value="no">Tidak Hadir</option>
+                    </select>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Terima kasih atas doa dan restunya</p>
+            <p class="quote">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+untukmu pasangan dari jenismu sendiri, agar kamu cenderung
+dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu
+rasa kasih dan sayang."
+(QS. Ar-Rum: 21)</p>
+        </footer>
+    </div>
+    <audio id="weddingMusic" loop>
+    <source src="music/lagu.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
